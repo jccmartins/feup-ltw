@@ -1,0 +1,208 @@
+#formTitle {
+    font-size: 2em;
+    margin: 0;
+}
+
+.form p {
+    font-weight: normal;
+}
+
+form {
+    background-color: white;
+    color: black;
+    /* 
+    Pra tentar centrar, tirado do stor
+    margin: 15em auto;
+     */
+    /* 
+    Pra centrar, da net
+    https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/
+     */
+    /**/
+    width: 20em;
+    padding: 1em;
+    border-radius: 0.25em;
+    font-weight: bold;
+    color: rgb(47, 47, 47);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.27);
+}
+
+form#searchForm,
+form#login,
+form#signup,
+form#profile {
+    /* margin: auto;
+    margin-top: 7em; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+form input {
+    width: 100%;
+    padding: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+form input[type=date]:invalid {
+    color: rgb(117, 117, 117);
+}
+
+::placeholder {
+    color: rgb(117, 117, 117);
+}
+
+form #button:hover {
+    background-color: rgb(255, 50, 50);
+}
+
+form #button {
+    background-color: rgb(255, 64, 64);
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+form h1 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+form a {
+    font-weight: bold;
+    color: rgb(26, 130, 148);
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 0em;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1em;
+    background: #d3d3d3;
+    outline: none;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgb(31, 149, 170);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgb(31, 149, 170);
+    cursor: pointer;
+}
+
+#suggestions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+#place {
+    margin: 0em;
+}
+
+
+/*the container must be positioned relative:*/
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(250, 250, 250);
+    border-bottom: 0.05em solid rgb(220, 220, 220);
+}
+
+
+/*when hovering an item:*/
+
+.autocomplete-items div:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+/* #place + span{
+    background-color: white;
+    border: 3px solid green;
+    display: block;
+    left: -9999px;
+    opacity: 0;
+    padding: 7px 0px;
+    position: absolute;
+    text-align: center;
+    top: 0.5em;
+    right: 1em;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    width: 5em;
+}
+
+#place:focus + span {
+    left: 140px;
+    opacity: 1;
+} */
+
+
+/**
+ * Messages
+ */
+
+#messages .error {
+    color: rgb(255, 40, 40);
+}
+
+#messages .success {
+    color: rgb(26, 130, 148);
+}

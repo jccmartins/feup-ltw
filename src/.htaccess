@@ -1,0 +1,15 @@
+ErrorDocument 404 https://web.fe.up.pt/~up201704567/pages/notFound.html
+ErrorDocument 403 https://web.fe.up.pt/~up201704567/pages/notFound.html
+
+Options All -Indexes
+
+<Files ~ "\.db$">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files ~ "\.sql$">
+    Order allow,deny
+    Deny from all
+</Files>
+

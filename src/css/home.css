@@ -1,0 +1,17 @@
+body {
+    background: #EDEBED url("../images/mainBackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+    body {
+        background: #EDEBED url("../images/mobileBackground.jpg");
+        background-attachment: fixed;
+        background-position: 100% top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

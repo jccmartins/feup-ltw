@@ -1,0 +1,206 @@
+body {
+    background: #EDEBED url("../images/hostHome2.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Style the form */
+
+#hostHomeForm {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5em;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 0.25em;
+    font-weight: bold;
+    color: rgb(47, 47, 47);
+}
+
+
+/* Style the input fields */
+
+input,
+textarea {
+    width: 100%;
+    padding: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 10em;
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+
+input.invalid,
+textarea.invalid {
+    background-color: #ffdddd;
+}
+
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+}
+
+.stepButtons {
+    text-align: center;
+    margin: 1em;
+}
+
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+    height: 1em;
+    width: 1em;
+    margin: 1em 0.5em 0em 0.5em;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+
+/* Mark the active step: */
+
+.step.active {
+    opacity: 1;
+}
+
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: #4CAF50;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: rgb(255, 40, 40);
+}
+
+#prevBtn {
+    float: left;
+}
+
+#nextBtn {
+    float: right;
+}
+
+#prevBtn,
+#nextBtn {
+    width: 7em;
+    margin-top: 1em;
+    background-color: rgb(255, 64, 64);
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+#custom-button {
+    background-color: rgb(31, 149, 170);
+    font-weight: bold;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+#custom-button:hover {
+    background-color: rgb(26, 130, 148);
+}
+
+#custom-text {
+    margin-left: 1em;
+    font-family: sans-serif;
+    color: #aaa;
+}
+
+div#photosUploaded {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 20em;
+}
+
+.tab div#file,
+.tab div#img {
+    width: 50%;
+    float: left;
+}
+
+.tab div input[id^="file"] {
+    display: none;
+}
+
+.tab div label#imgPreview {
+    display: block;
+    padding-bottom: 56.25%;
+    background: #EDEBED url("../images/add.jpeg");
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.tab div#img {
+    position: relative;
+    height: 0;
+    padding-bottom: 28.125%;
+}
+
+.tab div#img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    cursor: pointer;
+}
+
+
+/* .tab div img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+} */
+
+.tab div input[id^="img"] {
+    display: none;
+}

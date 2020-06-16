@@ -1,0 +1,74 @@
+body {
+    margin: 0em;
+}
+
+nav {
+    overflow: hidden;
+}
+
+.topNav {
+    z-index: 1;
+}
+
+/* Style the links inside the navigation bar */
+.topNav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 0.1em solid transparent;
+}
+
+/* Change the color of links on hover */
+.topNav a:hover {
+    border-bottom-color: #FFF;
+}
+
+/*Puts logo on the left*/
+.topNav a[id="logo"] {
+    float: left;
+    border-bottom: 0;
+}
+
+.topNav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .topNav a:not(:first-child) {
+        display: none;
+    }
+
+    .topNav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topNav.responsive {
+        position: relative;
+    }
+
+    .topNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-bottom: 0;
+    }
+
+    .topNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .topNav .resizable:hover {
+        border-bottom: 0.1em solid transparent;
+        background-color: rgb(228, 228, 228);
+    }
+}
